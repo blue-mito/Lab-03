@@ -1,0 +1,28 @@
+*{ box-sizing: border-box;}
+
+/*main {color: rgb(5, 5, 5); */
+
+/* body { background-color: rgb(15, 184, 206); } */
+
+h1 { font-size: 3rem; color:rgb(15, 184, 206);
+}
+
+.p.comicrelief { 
+    color:aqua;
+    background-color: darkgrey;
+    border: thick;
+    }
+    /*    
+    .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    */
+
+/*</style>*/
