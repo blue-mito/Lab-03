@@ -1,4 +1,5 @@
 'use strict';
+
 let username = prompt('Greetings, user. Do you have a preferred name?');
 alert('Welcome: '+ username + '.');
 console.log("User Information Collected.");
@@ -21,8 +22,6 @@ if (answer1 === "YES" || answer1 === "Y") {
 console.log("Question One Information Collected.");
 
 
-
-
 // QUESTION TWO: WHAT IS HIS DOG\'S NAME?
 let dog = prompt('Is Ken\'s dog named Moxie?');
 let answer2 = dog.toUpperCase();
@@ -38,7 +37,6 @@ if (answer2 === "YES" || answer2 === "Y") {
 }
 //alert('Oh, ' + dog + ', really? ... (continues scribbling)');
 console.log("Question Two Information Collected.");
-
 
 
 // WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE? 
@@ -94,7 +92,6 @@ alert('So, thoughts on snack material... '+ snack + ', huh. Did not expect that.
 console.log("Question Five Information Collected.");
 
 
-
 // NUMBER GUESSING GAME
 alert('Let\'s play a number guessing game. Pick a number and I\'ll let you know if you are close, you will have 4 guesses.');
 let correctNum = 7
@@ -119,7 +116,6 @@ while (numGuessRemain > 0) {
 }
 alert("Thank you for playing.")
 console.log("Question Six Information Collected.");
-
 
 
 // MULTIPLE CORRECT ANSWERS
@@ -156,7 +152,6 @@ while (pokeGuessRemain > 0) {
 
 
 // FINAL TEXT?
-
-
 alert("Well, Thank you for playing, " + username + ". We hope you had fun and look forward to learning more about you.");
 console.log("Quiz complete.");
+
