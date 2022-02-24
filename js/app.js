@@ -52,13 +52,35 @@ let score = 0;
 // console.log(score);
 
 // WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE?
-function speak (score) {
-    let language = prompt('Is Ken\'s favorite programming language COBOL?');
-    let answer3 = language.toUpperCase();
-    if (answer3 === "YES" || answer3 === "Y") {
+// function speak (score) {
+//     let language = prompt('Is Ken\'s favorite programming language COBOL?');
+//     let answer3 = language.toUpperCase();
+//     if (answer3 === "YES" || answer3 === "Y") {
+//         //console.log("Oh, that's not right...")
+//         alert("Oh, that's not right...");
+//     } else if (answer3 === "NO" || answer3 === "N") {
+//         //console.log("Yes! That's right!");
+//         alert("Yes! That's right!");
+//         score++;
+//     } else {
+//         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
+//         alert("Please answer with either a \'Yes\' or a \'No\'.");
+//     }
+//     //alert('Hmm... ' + language + ' ... (continues scribbling)');
+//     console.log("Question Three Information Collected.");
+//     return score;
+// }
+// score = speak(score);
+// console.log(score);
+
+// // WHAT IS HIS FAVORITE PROGRAMMING BEVEREDGE?
+function roundOne(score) {
+    let drink = prompt('Is Ken\'s favorite programming drink Everclear?');
+    let answer4 = drink.toUpperCase()
+    if (answer4 === "YES" || answer4 === "Y") {
         //console.log("Oh, that's not right...")
         alert("Oh, that's not right...");
-    } else if (answer3 === "NO" || answer3 === "N") {
+    } else if (answer4 === "NO" || answer4 === "N") {
         //console.log("Yes! That's right!");
         alert("Yes! That's right!");
         score++;
@@ -66,29 +88,12 @@ function speak (score) {
         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
         alert("Please answer with either a \'Yes\' or a \'No\'.");
     }
-    //alert('Hmm... ' + language + ' ... (continues scribbling)');
-    console.log("Question Three Information Collected.");
+    alert('We agree, then? '+ drink +" works for me...");
+    console.log("Question Four Information Collected.");
     return score;
 }
-score = speak(score);
+score = roundOne(score);
 console.log(score);
-
-// // WHAT IS HIS FAVORITE PROGRAMMING BEVEREDGE?
-// let drink = prompt('Is Ken\'s favorite programming drink Everclear?');
-// let answer4 = drink.toUpperCase()
-// if (answer4 === "YES" || answer4 === "Y") {
-//     //console.log("Oh, that's not right...")
-//     alert("Oh, that's not right...");
-// } else if (answer4 === "NO" || answer4 === "N") {
-//     //console.log("Yes! That's right!");
-//     alert("Yes! That's right!");
-// } else {
-//     //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-//     alert("Please answer with either a \'Yes\' or a \'No\'.");
-// }
-// alert('We agree, then? '+ drink +" works for me...");
-// console.log("Question Four Information Collected.");
-
 
 
 // // WHAT IS HIS FAVORITE PROGRAMMING SNACK?
