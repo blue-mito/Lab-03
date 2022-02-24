@@ -6,45 +6,50 @@ console.log("User Information Collected.");
 
 let score = 0;
 
-// QUESTION ONE: WHERE DOES HE LIVE?
-function home (score) {
-    let home = prompt('Does Ken live in Delaware?');
-    let answer1 = home.toUpperCase();
-    if (answer1 === "YES" || answer1 === "Y") {
-        //console.log("Oh, that's not right...")
-        alert("Oh, that's not right...");
-    } else if (answer1 === "NO" || answer1 === "N") {
+// // QUESTION ONE: WHERE DOES HE LIVE?
+// function home (score) {
+//     let home = prompt('Does Ken live in Delaware?');
+//     let answer1 = home.toUpperCase();
+//     if (answer1 === "YES" || answer1 === "Y") {
+//         //console.log("Oh, that's not right...")
+//         alert("Oh, that's not right...");
+//     } else if (answer1 === "NO" || answer1 === "N") {
+//         //console.log("Yes! That's right!");
+//         alert("Yes! That's right!");
+//         score++;
+//     } else {
+//         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
+//         alert("Please answer with either a \'Yes\' or a \'No\'.");
+//     }
+//     //alert('I see. So, '+ home + '... (continues scribbling)');
+//     console.log("Question One Information Collected.");
+//     console.log(score);
+//     return score;
+// }
+// score = home (score);
+// console.log(score);
+
+// QUESTION TWO: WHAT IS HIS DOG\'S NAME?
+function doggos (score) {
+    let dog = prompt('Is Ken\'s dog named Moxie?');
+    let answer2 = dog.toUpperCase();
+    if (answer2 === "YES" || answer2 === "Y") {
         //console.log("Yes! That's right!");
         alert("Yes! That's right!");
         score++;
+    } else if (answer2 === "NO" || answer2 === "N") {
+        //console.log("Oh, that's not right...")
+        alert("Oh, that's not right...");
     } else {
         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
         alert("Please answer with either a \'Yes\' or a \'No\'.");
     }
-    //alert('I see. So, '+ home + '... (continues scribbling)');
-    console.log("Question One Information Collected.");
-    console.log(score);
+    //alert('Oh, ' + dog + ', really? ... (continues scribbling)');
+    console.log("Question Two Information Collected.");
     return score;
 }
-score = home (score);
+score = doggos(score);
 console.log(score);
-
-// // QUESTION TWO: WHAT IS HIS DOG\'S NAME?
-// let dog = prompt('Is Ken\'s dog named Moxie?');
-// let answer2 = dog.toUpperCase();
-// if (answer2 === "YES" || answer2 === "Y") {
-//     //console.log("Yes! That's right!");
-//     alert("Yes! That's right!");
-// } else if (answer2 === "NO" || answer2 === "N") {
-//     //console.log("Oh, that's not right...")
-//     alert("Oh, that's not right...");
-// } else {
-//     //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-//     alert("Please answer with either a \'Yes\' or a \'No\'.");
-// }
-// //alert('Oh, ' + dog + ', really? ... (continues scribbling)');
-// console.log("Question Two Information Collected.");
-
 
 // // WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE?
 // let language = prompt('Is Ken\'s favorite programming language COBOL?');
