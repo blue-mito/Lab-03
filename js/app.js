@@ -118,71 +118,74 @@ let score = 0;
 // score = snackTime(score);
 // console.log(score);
 
-// NUMBER GUESSING GAME
-function roulette(score) {
-    alert('Let\'s play a number guessing game. Pick a number and I\'ll let you know if you are close, you will have 4 guesses.');
-    let correctNum = 7;
-    let numGuessRemain = 4;
+// // NUMBER GUESSING GAME
+// function roulette(score) {
+//     alert('Let\'s play a number guessing game. Pick a number and I\'ll let you know if you are close, you will have 4 guesses.');
+//     let correctNum = 7;
+//     let numGuessRemain = 4;
 
-    while (numGuessRemain > 0) {
-        let numGuess = prompt('Pick a number:');
-        if (numGuess == correctNum) {
-            alert("You guessed right!");
-            numGuessRemain = 0;
-            score++;
-            break;
-        } else if (numGuess > correctNum) {
-            alert("That's too high...");
-        } else if (numGuess < correctNum) {
-            alert("That's too low...");
-        } else {
-            //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-            alert("Please answer with a number.");
+//     while (numGuessRemain > 0) {
+//         let numGuess = prompt('Pick a number:');
+//         if (numGuess == correctNum) {
+//             alert("You guessed right!");
+//             numGuessRemain = 0;
+//             score++;
+//             break;
+//         } else if (numGuess > correctNum) {
+//             alert("That's too high...");
+//         } else if (numGuess < correctNum) {
+//             alert("That's too low...");
+//         } else {
+//             //console.log("Please answer with either a \'Yes\' or a \'No\'.");
+//             alert("Please answer with a number.");
+//         }
+//         numGuessRemain--;
+//         alert("You have: " + numGuessRemain + " guesses remaining.");
+//     }
+//     alert("Thank you for playing.");
+//     console.log("Question Six Information Collected.");
+//     return score;
+// }
+// score = roulette(score);
+// console.log(score);
+
+
+// MULTIPLE CORRECT ANSWERS
+function iChooseYou(score) {
+    alert('All right. Final Question: Can you guess the pokemon I had when I faced the Elite Four in Pokemon Blue? You will have 6 guesses.');
+
+    let sixPokemon = ['Charizard', 'Polywrath', 'Alakazam', 'Victrebell', 'Raichu', 'Onyx'];
+    //let pokeGuess = prompt('Guess a pokemon:');
+    let pokeGuessRemain = 6;
+    let correctPokeGuess = 0;
+
+    while (pokeGuessRemain > 0) {
+        let pokeGuess = prompt('Guess a pokemon:');
+        let teamCheck = 0;
+        while (teamCheck < 6) {
+            if (pokeGuess == sixPokemon[teamCheck]) {
+                alert("You guessed right!");
+                score++;
+                correctPokeGuess++;
+                teamCheck = 6;
+            }
+            if (teamCheck == 5) {
+                alert("Nope. They weren't on my team...");
+            }
+            teamCheck++;
         }
-        numGuessRemain--;
-        alert("You have: " + numGuessRemain + " guesses remaining.");
-    }
-    alert("Thank you for playing.");
-    console.log("Question Six Information Collected.");
-    return score;
+        pokeGuessRemain--;
+        if (pokeGuessRemain === 0) {
+            alert("You are out of guesses. The Team I had when I faced the Elite Four was: Charizard, Polywrath, Alakazam, Victrebell, Raichu, and Onyx." );
+            alert("You had " + correctPokeGuess + " correct answers.");
+        } else {
+            alert("You have: " + pokeGuessRemain + " guesses remaining.");
+        }
+    } return score;
 }
-score = roulette(score);
+score = iChooseYou(score);
 console.log(score);
 
-
-// // MULTIPLE CORRECT ANSWERS
-
-// alert('All right. Final Question: Can you guess the pokemon I had when I faced the Elite Four in Pokemon Blue? You will have 6 guesses.');
-
-// let sixPokemon = ['Charizard', 'Polywrath', 'Alakazam', 'Victrebell', 'Raichu', 'Onyx']
-// //let pokeGuess = prompt('Guess a pokemon:');
-// let pokeGuessRemain = 6
-// let correctPokeGuess = 0
-
-// while (pokeGuessRemain > 0) {
-//     let pokeGuess = prompt('Guess a pokemon:');
-//     let teamCheck = 0;
-//     while (teamCheck < 6) {
-//         if (pokeGuess == sixPokemon[teamCheck]) {
-//             alert("You guessed right!");
-//             correctPokeGuess++
-//             teamCheck = 6;
-//         }
-//         if (teamCheck == 5) {
-//             alert("Nope. They weren't on my team...");
-//         }
-//         teamCheck++
-//     }
-//     pokeGuessRemain--
-//     if (pokeGuessRemain === 0) {
-//         alert("You are out of guesses. The Team I had when I faced the Elite Four was: Charizard, Polywrath, Alakazam, Victrebell, Raichu, and Onyx." )
-//         alert("You had " + correctPokeGuess + " correct answers.")
-//     } else {
-//         alert("You have: " + pokeGuessRemain + " guesses remaining.")
-//     }
-// }
-
-
-// // FINAL TEXT?
-// alert("Well, Thank you for playing, " + username + ". We hope you had fun and look forward to learning more about you.");
-// console.log("Quiz complete.");
+// FINAL TEXT?
+alert("Well, Thank you for playing, " + username + ". We hope you had fun and look forward to learning more about you.");
+console.log("Quiz complete.");
