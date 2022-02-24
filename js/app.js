@@ -51,7 +51,7 @@ let score = 0;
 // score = doggos(score);
 // console.log(score);
 
-// WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE?
+// //WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE?
 // function speak (score) {
 //     let language = prompt('Is Ken\'s favorite programming language COBOL?');
 //     let answer3 = language.toUpperCase();
@@ -74,44 +74,49 @@ let score = 0;
 // console.log(score);
 
 // // WHAT IS HIS FAVORITE PROGRAMMING BEVEREDGE?
-function roundOne(score) {
-    let drink = prompt('Is Ken\'s favorite programming drink Everclear?');
-    let answer4 = drink.toUpperCase()
-    if (answer4 === "YES" || answer4 === "Y") {
-        //console.log("Oh, that's not right...")
-        alert("Oh, that's not right...");
-    } else if (answer4 === "NO" || answer4 === "N") {
+// function roundOne(score) {
+//     let drink = prompt('Is Ken\'s favorite programming drink Everclear?');
+//     let answer4 = drink.toUpperCase()
+//     if (answer4 === "YES" || answer4 === "Y") {
+//         //console.log("Oh, that's not right...")
+//         alert("Oh, that's not right...");
+//     } else if (answer4 === "NO" || answer4 === "N") {
+//         //console.log("Yes! That's right!");
+//         alert("Yes! That's right!");
+//         score++;
+//     } else {
+//         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
+//         alert("Please answer with either a \'Yes\' or a \'No\'.");
+//     }
+//     alert('We agree, then? '+ drink +" works for me...");
+//     console.log("Question Four Information Collected.");
+//     return score;
+// }
+// score = roundOne(score);
+// console.log(score);
+
+
+// WHAT IS HIS FAVORITE PROGRAMMING SNACK?
+function snackTime(score) {
+    let snack = prompt('Is Ken\'s favorite programming snack Cheez-its?');
+    let answer5 = snack.toUpperCase();
+    if (answer5 === "YES" || answer5 === "Y") {
         //console.log("Yes! That's right!");
         alert("Yes! That's right!");
         score++;
+    } else if (answer5 === "NO" || answer5 === "N") {
+        //console.log("Oh, that's not right...")
+        alert("Oh, that's not right...");
     } else {
         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-        alert("Please answer with either a \'Yes\' or a \'No\'.");
+    alert("Please answer with either a \'Yes\' or a \'No\'.");
     }
-    alert('We agree, then? '+ drink +" works for me...");
-    console.log("Question Four Information Collected.");
+    alert('So, thoughts on snack material... '+ snack + ', huh. Did not expect that. (continues scribbling)');
+    console.log("Question Five Information Collected.");
     return score;
 }
-score = roundOne(score);
+score = snackTime(score);
 console.log(score);
-
-
-// // WHAT IS HIS FAVORITE PROGRAMMING SNACK?
-// let snack = prompt('Is Ken\'s favorite programming snack Cheez-its?');
-// let answer5 = snack.toUpperCase();
-// if (answer5 === "YES" || answer5 === "Y") {
-//     //console.log("Yes! That's right!");
-//     alert("Yes! That's right!");
-// } else if (answer5 === "NO" || answer5 === "N") {
-//     //console.log("Oh, that's not right...")
-//     alert("Oh, that's not right...");
-// } else {
-//     //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-//    alert("Please answer with either a \'Yes\' or a \'No\'.");
-// }
-// alert('So, thoughts on snack material... '+ snack + ', huh. Did not expect that. (continues scribbling)');
-// console.log("Question Five Information Collected.");
-
 
 // // NUMBER GUESSING GAME
 // alert('Let\'s play a number guessing game. Pick a number and I\'ll let you know if you are close, you will have 4 guesses.');
