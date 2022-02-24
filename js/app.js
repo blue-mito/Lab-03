@@ -96,52 +96,58 @@ let score = 0;
 // console.log(score);
 
 
-// WHAT IS HIS FAVORITE PROGRAMMING SNACK?
-function snackTime(score) {
-    let snack = prompt('Is Ken\'s favorite programming snack Cheez-its?');
-    let answer5 = snack.toUpperCase();
-    if (answer5 === "YES" || answer5 === "Y") {
-        //console.log("Yes! That's right!");
-        alert("Yes! That's right!");
-        score++;
-    } else if (answer5 === "NO" || answer5 === "N") {
-        //console.log("Oh, that's not right...")
-        alert("Oh, that's not right...");
-    } else {
-        //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-    alert("Please answer with either a \'Yes\' or a \'No\'.");
-    }
-    alert('So, thoughts on snack material... '+ snack + ', huh. Did not expect that. (continues scribbling)');
-    console.log("Question Five Information Collected.");
-    return score;
-}
-score = snackTime(score);
-console.log(score);
-
-// // NUMBER GUESSING GAME
-// alert('Let\'s play a number guessing game. Pick a number and I\'ll let you know if you are close, you will have 4 guesses.');
-// let correctNum = 7
-// let numGuessRemain = 4
-
-// while (numGuessRemain > 0) {
-//     let numGuess = prompt('Pick a number:');
-//     if (numGuess == correctNum) {
-//         alert("You guessed right!");
-//         numGuessRemain = 0
-//         break
-//     } else if (numGuess > correctNum) {
-//         alert("That's too high...");
-//     } else if (numGuess < correctNum) {
-//         alert("That's too low...");
+// // WHAT IS HIS FAVORITE PROGRAMMING SNACK?
+// function snackTime(score) {
+//     let snack = prompt('Is Ken\'s favorite programming snack Cheez-its?');
+//     let answer5 = snack.toUpperCase();
+//     if (answer5 === "YES" || answer5 === "Y") {
+//         //console.log("Yes! That's right!");
+//         alert("Yes! That's right!");
+//         score++;
+//     } else if (answer5 === "NO" || answer5 === "N") {
+//         //console.log("Oh, that's not right...")
+//         alert("Oh, that's not right...");
 //     } else {
 //         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-//         alert("Please answer with a number.");
+//     alert("Please answer with either a \'Yes\' or a \'No\'.");
 //     }
-//     numGuessRemain--
-//     alert("You have: " + numGuessRemain + " guesses remaining.")
+//     alert('So, thoughts on snack material... '+ snack + ', huh. Did not expect that. (continues scribbling)');
+//     console.log("Question Five Information Collected.");
+//     return score;
 // }
-// alert("Thank you for playing.")
-// console.log("Question Six Information Collected.");
+// score = snackTime(score);
+// console.log(score);
+
+// NUMBER GUESSING GAME
+function roulette(score) {
+    alert('Let\'s play a number guessing game. Pick a number and I\'ll let you know if you are close, you will have 4 guesses.');
+    let correctNum = 7;
+    let numGuessRemain = 4;
+
+    while (numGuessRemain > 0) {
+        let numGuess = prompt('Pick a number:');
+        if (numGuess == correctNum) {
+            alert("You guessed right!");
+            numGuessRemain = 0;
+            score++;
+            break;
+        } else if (numGuess > correctNum) {
+            alert("That's too high...");
+        } else if (numGuess < correctNum) {
+            alert("That's too low...");
+        } else {
+            //console.log("Please answer with either a \'Yes\' or a \'No\'.");
+            alert("Please answer with a number.");
+        }
+        numGuessRemain--;
+        alert("You have: " + numGuessRemain + " guesses remaining.");
+    }
+    alert("Thank you for playing.");
+    console.log("Question Six Information Collected.");
+    return score;
+}
+score = roulette(score);
+console.log(score);
 
 
 // // MULTIPLE CORRECT ANSWERS
