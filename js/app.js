@@ -29,45 +29,49 @@ let score = 0;
 // score = home (score);
 // console.log(score);
 
-// QUESTION TWO: WHAT IS HIS DOG\'S NAME?
-function doggos (score) {
-    let dog = prompt('Is Ken\'s dog named Moxie?');
-    let answer2 = dog.toUpperCase();
-    if (answer2 === "YES" || answer2 === "Y") {
+// // QUESTION TWO: WHAT IS HIS DOG\'S NAME?
+// function doggos (score) {
+//     let dog = prompt('Is Ken\'s dog named Moxie?');
+//     let answer2 = dog.toUpperCase();
+//     if (answer2 === "YES" || answer2 === "Y") {
+//         //console.log("Yes! That's right!");
+//         alert("Yes! That's right!");
+//         score++;
+//     } else if (answer2 === "NO" || answer2 === "N") {
+//         //console.log("Oh, that's not right...")
+//         alert("Oh, that's not right...");
+//     } else {
+//         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
+//         alert("Please answer with either a \'Yes\' or a \'No\'.");
+//     }
+//     //alert('Oh, ' + dog + ', really? ... (continues scribbling)');
+//     console.log("Question Two Information Collected.");
+//     return score;
+// }
+// score = doggos(score);
+// console.log(score);
+
+// WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE?
+function speak (score) {
+    let language = prompt('Is Ken\'s favorite programming language COBOL?');
+    let answer3 = language.toUpperCase();
+    if (answer3 === "YES" || answer3 === "Y") {
+        //console.log("Oh, that's not right...")
+        alert("Oh, that's not right...");
+    } else if (answer3 === "NO" || answer3 === "N") {
         //console.log("Yes! That's right!");
         alert("Yes! That's right!");
         score++;
-    } else if (answer2 === "NO" || answer2 === "N") {
-        //console.log("Oh, that's not right...")
-        alert("Oh, that's not right...");
     } else {
         //console.log("Please answer with either a \'Yes\' or a \'No\'.");
         alert("Please answer with either a \'Yes\' or a \'No\'.");
     }
-    //alert('Oh, ' + dog + ', really? ... (continues scribbling)');
-    console.log("Question Two Information Collected.");
+    //alert('Hmm... ' + language + ' ... (continues scribbling)');
+    console.log("Question Three Information Collected.");
     return score;
 }
-score = doggos(score);
+score = speak(score);
 console.log(score);
-
-// // WHAT IS HIS FAVORITE PROGRAMMING LANGUAGE?
-// let language = prompt('Is Ken\'s favorite programming language COBOL?');
-// let answer3 = language.toUpperCase();
-// if (answer3 === "YES" || answer3 === "Y") {
-//     //console.log("Oh, that's not right...")
-//     alert("Oh, that's not right...");
-// } else if (answer3 === "NO" || answer3 === "N") {
-//     //console.log("Yes! That's right!");
-//     alert("Yes! That's right!");
-// } else {
-//     //console.log("Please answer with either a \'Yes\' or a \'No\'.");
-//     alert("Please answer with either a \'Yes\' or a \'No\'.");
-// }
-// //alert('Hmm... ' + language + ' ... (continues scribbling)');
-// console.log("Question Three Information Collected.");
-
-
 
 // // WHAT IS HIS FAVORITE PROGRAMMING BEVEREDGE?
 // let drink = prompt('Is Ken\'s favorite programming drink Everclear?');
